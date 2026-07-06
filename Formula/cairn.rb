@@ -5,21 +5,21 @@
 class Cairn < Formula
   desc "One orchestrator for quality, versioning, changelog, and commit hygiene across every language"
   homepage "https://github.com/IVIR3zaM/Cairn"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/IVIR3zaM/Cairn/releases/download/v0.2.0/cairn_darwin_amd64.tar.gz"
-      sha256 "d424474d647c7ea84e690abb920a1a76d81177a416e2e928de0269d02334d3f5"
+      url "https://github.com/IVIR3zaM/Cairn/releases/download/v0.2.1/cairn_darwin_amd64.tar.gz"
+      sha256 "1a2171fa2834ebacd996b51edf792506cb909456aba3ae458ad5868c30267b6a"
 
       define_method(:install) do
         bin.install "cairn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/IVIR3zaM/Cairn/releases/download/v0.2.0/cairn_darwin_arm64.tar.gz"
-      sha256 "767064e148f17f55febade6e233e6d6213efa8a1c002950204b4723183b49c09"
+      url "https://github.com/IVIR3zaM/Cairn/releases/download/v0.2.1/cairn_darwin_arm64.tar.gz"
+      sha256 "3421e26f12c31781141c69c45ede49249aaea5e88eef20f3fa11b2acbecb60fc"
 
       define_method(:install) do
         bin.install "cairn"
@@ -29,15 +29,15 @@ class Cairn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/IVIR3zaM/Cairn/releases/download/v0.2.0/cairn_linux_amd64.tar.gz"
-      sha256 "109f1981ef143c3f7b316f67852d32587d399e4615988573cd3f75ee79aa7ca1"
+      url "https://github.com/IVIR3zaM/Cairn/releases/download/v0.2.1/cairn_linux_amd64.tar.gz"
+      sha256 "59c1d66cb6ae858690facba8e856e045524e7a63eb69a9cd8236b2a2715d96d5"
       define_method(:install) do
         bin.install "cairn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/IVIR3zaM/Cairn/releases/download/v0.2.0/cairn_linux_arm64.tar.gz"
-      sha256 "2ab5e152ed7ef2bc12bb689314981884d526c45f9450742a3b4ab01b26dceb52"
+      url "https://github.com/IVIR3zaM/Cairn/releases/download/v0.2.1/cairn_linux_arm64.tar.gz"
+      sha256 "b3a5e82828f0fe2016e0d4d31c04e2d2bef575701ba034e988403a9dccbbb735"
       define_method(:install) do
         bin.install "cairn"
       end
