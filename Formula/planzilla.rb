@@ -1,8 +1,8 @@
 class Planzilla < Formula
   desc "Plan, run and verify work with AI agents from Markdown plan files"
   homepage "https://github.com/IVIR3zaM/Planzilla"
-  url "https://github.com/IVIR3zaM/Planzilla/releases/download/v0.1.0/planzilla-0.1.0.tar.gz"
-  sha256 "cb9047772bc8ae87ffc2ffe0ecf65f3e6b07673957470d955c3651d5f3839d55"
+  url "https://github.com/IVIR3zaM/Planzilla/releases/download/v0.2.0/planzilla-0.2.0.tar.gz"
+  sha256 "add3260d571bc3d086e6fa1eac4b2bce062485421b4be0645548249d0af175fb"
   license "Apache-2.0"
 
   depends_on "python@3.13"
